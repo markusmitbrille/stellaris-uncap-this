@@ -10,6 +10,6 @@ tags={
 }
 name="Uncap This: Megastructures"
 picture="thumbnail.png"
-supported_version="3.0.*"
+supported_version="3.1.*"
 path="mod/stellaris-uncap-this"
 remote_file_id="2466080827"

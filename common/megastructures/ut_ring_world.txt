@@ -1,5 +1,3 @@
-# see README.txt for example
-
 ring_world_1 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
@@ -118,90 +116,6 @@ ring_world_1 = {
 	on_build_complete = {
 		set_star_flag = ring_world_built
 	}
-}
-
-# Temporarily used for creating specific habitable or structural sections.
-ring_world_2_intermediate = {
-	entity = ""
-	construction_entity = "ringworld_seam_entity_01_full_entity"
-	portrait = "GFX_megastructure_construction_background"
-
-	build_time = 4800
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 10000
-		}
-	}
-
-	upgrade_from = {
-		ring_world_1
-	}
-
-	prerequisites = { "tech_ring_world" }
-
-	on_build_start = {}
-	on_build_cancel = {}
-	on_build_complete = {
-		every_system_planet = {
-			limit = { is_star = no }
-			remove_planet = yes
-		}
-		set_asteroid_belt = {
-			radius = 0
-		}
-
-		remove_megastructure = fromfrom
-		spawn_megastructure = {
-			name = "NAME_Ring_Section_A"
-			type = "ring_world_2"
-			orbit_angle = 0
-			orbit_distance = 45
-			owner = from
-			graphical_culture = fromfrom
-			planet = star
-		}
-		spawn_megastructure = {
-			name = "NAME_Ring_Section_B"
-			type = "ring_world_2"
-			orbit_angle = 90
-			orbit_distance = 45
-			owner = from
-			graphical_culture = fromfrom
-			planet = star
-		}
-		spawn_megastructure = {
-			name = "NAME_Ring_Section_C"
-			type = "ring_world_2"
-			orbit_angle = 180
-			orbit_distance = 45
-			owner = from
-			graphical_culture = fromfrom
-			planet = star
-		}
-		spawn_megastructure = {
-			name = "NAME_Ring_Section_D"
-			type = "ring_world_2"
-			orbit_angle = 270
-			orbit_distance = 45
-			owner = from
-			graphical_culture = fromfrom
-			planet = star
-		}
-	}
-}
-
-ring_world_2 = {
-	entity = "ringworld_3x_seams_entity"
-	portrait = "GFX_megastructure_construction_background"
-
-	upgrade_from = {
-		ring_world_2_intermediate
-	}
-
-	# used from script only
-	upgrade_desc = hide
-	potential = { always = no }
 }
 
 ring_world_3_intermediate = {
@@ -333,17 +247,6 @@ ring_world_3_intermediate = {
 	}
 }
 
-# Ruined Ring World Segment
-ring_world_ruined = {
-	entity = "ringworld_destroyed_entity"
-	portrait = "GFX_megastructure_construction_background"
-
-	potential = {
-		always = no
-	}
-}
-
-# Restored Ring World Segment
 ring_world_restored = {
 	entity = ""
 	construction_entity = "ringworld_phase_3_construction_entity"

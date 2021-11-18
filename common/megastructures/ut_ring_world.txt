@@ -122,11 +122,11 @@ ring_world_3_intermediate = {
 	entity = ""
 	construction_entity = "ringworld_phase_3_construction_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 7200
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 30000
 		}
 	}
 

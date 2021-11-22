@@ -1,2 +1,2 @@
-# stellaris-uncap-this
-Stellaris mod that uncaps the resource generating megastructures.
+# Uncap This: Megastructures
+This Stellaris mod uncaps the Dyson Sphere and Matter Decompressor megastructures, and replaces the uninhabitable segments of ring worlds with habitable segments (effectively tripling the number of planets).

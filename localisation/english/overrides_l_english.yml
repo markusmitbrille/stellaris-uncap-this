@@ -1,0 +1,3 @@
+﻿l_english:
+  # overrides
+  requires_no_habitable_planets:1 "$TRIGGER_FAIL$Cannot build in systems with colonies."

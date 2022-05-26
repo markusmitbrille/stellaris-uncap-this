@@ -1,4 +1,4 @@
-version="1.0"
+version="1.1"
 tags={
 	"Balance"
 	"Economy"
@@ -10,6 +10,6 @@ tags={
 }
 name="Uncap This: Megastructures"
 picture="thumbnail.png"
-supported_version="3.2.*"
+supported_version="3.4.*"
 path="mod/stellaris-uncap-this"
 remote_file_id="2466080827"
